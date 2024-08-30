@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    max-width: 1920px;
     background-image: url(../images/bg-desktop.svg);
     background-color: hsl(257, 40%, 49%);
     max-height: 100vh;
@@ -20,42 +19,41 @@ body {
 
 /* ---------------------------------------------- */
 
-.hero {
+main .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .mockups {
-    width: 1800px;
+main .hero .mockups {
     margin-right: 3rem;
     margin-left: 4rem;
     padding: 0px 30px;
-    height: 500px;
+    width: auto;
+    height: auto;
 }
 
-.hero .text-btn {
-    max-width: 600px;
+main .hero .text-btn {
     margin-left: 3rem;
     margin-right: 10rem;
     color: #fff;
 }
 
-.hero .text-btn .title {
+main .hero .text-btn .title {
     font-size: 5rem;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
 
-.hero .text-btn .about {
+main .hero .text-btn .about {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     font-size: 20px;
     font-family: "open sans", sans-serif;
-    width: 550px;
+    width: auto;
 }
 
-.hero .text-btn .btn {
+main .hero .text-btn .btn {
     font-size: 20px;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
@@ -66,7 +64,7 @@ body {
     box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.hero .text-btn .btn:hover {
+main .hero .text-btn .btn:hover {
     background-color: hsl(300, 69%, 71%);
     color: #fff;
     box-shadow:5px 5px 10px rgba(0, 0, 0, 0.9);
@@ -74,9 +72,10 @@ body {
 
 .footer {
     display: flex;
-    height: 97px;
+    height: auto;
     font-size: 35px;
     justify-content: flex-end;
+    background-color: aqua;
 }
 
 .footer .social {
