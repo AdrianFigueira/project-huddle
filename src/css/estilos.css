@@ -3,9 +3,14 @@ html {
 }
 
 body {
-    background-image: url(../images/bg-desktop.svg);
-    background-color: hsl(257, 40%, 49%);
-    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../images/bg-desktop.svg)hsl(257, 40%, 49%) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .header {
@@ -13,34 +18,32 @@ body {
 }
 
 .header .logo {
-    margin: 20px 2.6rem ;
     width: 250px;
+    margin-left: 2.5rem;
 }
-
-/* ---------------------------------------------- */
 
 main .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 main .hero .mockups {
-    margin-right: 3rem;
-    margin-left: 4rem;
     padding: 0px 30px;
+    margin-left: 4rem;
     width: auto;
     height: auto;
 }
 
 main .hero .text-btn {
-    margin-left: 3rem;
-    margin-right: 10rem;
+    max-width: 500px;
+    margin-right: 18rem;
     color: #fff;
 }
 
 main .hero .text-btn .title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
@@ -59,15 +62,15 @@ main .hero .text-btn .btn {
     font-family: "Poppins", sans-serif;
     padding: 15px 70px;
     border-radius: 50px;
-    background:#fff;
+    background: #fff;
     color: hsl(257, 40%, 49%);
-    box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 main .hero .text-btn .btn:hover {
     background-color: hsl(300, 69%, 71%);
     color: #fff;
-    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 .footer {
@@ -75,20 +78,19 @@ main .hero .text-btn .btn:hover {
     height: auto;
     font-size: 35px;
     justify-content: flex-end;
-    background-color: aqua;
 }
 
 .footer .social {
-    margin: 25px 90px;
+    margin: 25px 70px;
 }
 
 .footer .social a i {
-    margin-left: 20px;
+    margin-left: 23px;
     color: #fff;
     transition: 0.3s;
-    justify-content: center;
 }
+
 .footer .social a i:hover {
-    color:  hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
     font-size: 37px;
 }
